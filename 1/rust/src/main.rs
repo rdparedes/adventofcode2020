@@ -2,6 +2,9 @@ use std::fs::File;
 use std::io::{BufRead, BufReader, Error, ErrorKind, Result};
 use std::path::Path;
 
+/* Given a list of numbers, find 3 numbers that sum to 2020. Then multiply them.
+*/
+
 fn read_file(filename: &str) -> Result<Vec<i64>> {
     let path = Path::new(&filename);
 
