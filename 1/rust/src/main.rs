@@ -36,9 +36,10 @@ fn main() {
                     continue;
                 }
                 let k_val = data[k];
-                let k_partial_sum = partial_sum +  k_val;
+                let k_partial_sum = partial_sum + k_val;
                 if k_partial_sum == 2020 {
-                    println!("Found one!: {}", i_val * j_val * k_val);
+                    println!("Found one match!: {}, {}, {}", i_val, j_val, k_val);
+                    println!("i * j * k = {}", i_val * j_val * k_val);
                     break 'outer;
                 }
             }
